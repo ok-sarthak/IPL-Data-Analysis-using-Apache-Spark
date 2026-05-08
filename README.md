@@ -1,4 +1,4 @@
-# IPL Data Engineering + Data Science + Data Analytics Project (Apache Spark on Databricks)
+# IPL Data Analysis Project (Apache Spark on Databricks)
 
 ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-Data%20Processing-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-Notebook%20Execution-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
