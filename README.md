@@ -71,34 +71,34 @@ In this project, Spark is not just used for loading data; it is used for:
 
 ```mermaid
 flowchart LR
-		A[Public IPL Dataset<br/>data.world] --> B[Local Download]
-		B --> C[AWS S3 Bucket<br/>s3://ipl-data-analysis-project]
-		C --> D[Databricks Notebook]
-		D --> E[PySpark DataFrames]
-		E --> F[Transformations + Feature Engineering]
-		F --> G[Temp Views for Spark SQL]
-		G --> H[Analytical Queries]
-		H --> I[Pandas Conversion for Plotting]
-		I --> J[Matplotlib + Seaborn Visualizations]
-		J --> K[Insights for Decision-Making]
+    A[Public IPL Dataset - data.world] --> B[Local Download]
+    B --> C[AWS S3 Bucket - s3://ipl-data-analysis-project]
+    C --> D[Databricks Notebook]
+    D --> E[PySpark DataFrames]
+    E --> F[Transformations and Feature Engineering]
+    F --> G[Temp Views for Spark SQL]
+    G --> H[Analytical Queries]
+    H --> I[Pandas Conversion for Plotting]
+    I --> J[Matplotlib and Seaborn Visualizations]
+    J --> K[Insights for Decision Making]
 ```
 
 ### Spark Execution View (Conceptual)
 
 ```mermaid
 flowchart TB
-		U[Databricks User Notebook] --> D[Driver Program]
-		D --> S[SparkSession]
-		S --> C1[Executor 1]
-		S --> C2[Executor 2]
-		S --> C3[Executor N]
-		C1 --> R[(S3 Data Partitions)]
-		C2 --> R
-		C3 --> R
-		C1 --> O[Partial Aggregates]
-		C2 --> O
-		C3 --> O
-		O --> D
+    U[Databricks User Notebook] --> D[Driver Program]
+    D --> S[SparkSession]
+    S --> C1[Executor 1]
+    S --> C2[Executor 2]
+    S --> C3[Executor N]
+    C1 --> R[S3 Data Partitions]
+    C2 --> R
+    C3 --> R
+    C1 --> O[Partial Aggregates]
+    C2 --> O
+    C3 --> O
+    O --> D
 ```
 
 ---
@@ -209,14 +209,14 @@ aws s3 ls s3://ipl-data-analysis-project/
 
 ```mermaid
 flowchart TD
-		A[Define StructType Schemas] --> B[Read CSV from S3 into Spark DataFrames]
-		B --> C[Data Quality Filter<br/>remove wides & no-balls for selected analysis]
-		C --> D[Feature Engineering<br/>running totals, impact flags, temporal features]
-		D --> E[Register Temp Views]
-		E --> F[Spark SQL Analytics]
-		F --> G[Convert selected outputs to Pandas]
-		G --> H[Visualize trends and KPIs]
-		H --> I[Interpret cricket insights]
+    A[Define StructType Schemas] --> B[Read CSV from S3 into Spark DataFrames]
+    B --> C[Data Quality Filter - remove wides and no balls]
+    C --> D[Feature Engineering - running totals and impact flags]
+    D --> E[Register Temp Views]
+    E --> F[Spark SQL Analytics]
+    F --> G[Convert Selected Outputs to Pandas]
+    G --> H[Visualize Trends and KPIs]
+    H --> I[Interpret Cricket Insights]
 ```
 
 ---
